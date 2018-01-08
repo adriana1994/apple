@@ -25,8 +25,9 @@ body {
   margin-bottom: 0px;
   background-position: bottom;
   background-repeat: no-repeat;
-  background-size: 60%;
-  height: 70%; }
+  background-size: 90vh;
+  height: 30rem;
+  min-height: 40rem; }
   .iphonex h1 {
     font-weight: bold;
     font-size: 350%; }
@@ -39,8 +40,10 @@ body {
   margin-bottom: 10;
   background-position: bottom;
   background-repeat: no-repeat;
-  background-size: 60%;
-  height: 70%; }
+  background-size: 90vh;
+  height: 30rem;
+  min-height: 40rem;
+  background-color: #F9F0EA; }
   .iphone8 h1 {
     font-weight: bold;
     font-size: 350%; }
@@ -51,11 +54,11 @@ body {
   text-align: center; }
   .card h4 {
     color: #000000;
-    font-size: 2rem;
+    font-size: 2em;
     font-weight: bold; }
     .card h4 p {
       color: #ff0000;
-      font-size: 50%; }
+      font-size: 0.5em; }
   .card .lal {
     color: white; }
 
