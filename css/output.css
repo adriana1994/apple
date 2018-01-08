@@ -1,0 +1,89 @@
+.iphonex h1, .iphonex h3, .iphone8 h1, .iphone8 h3 {
+  color: black;
+  text-align: center; }
+
+body {
+  background-color: #F1F1F1; }
+
+.navbar {
+  background-color: #000000;
+  opacity: 0.8; }
+  .navbar .container {
+    text-align: center; }
+
+.nav-link {
+  font-size: 0.9em;
+  color: white;
+  padding: 0; }
+  .nav-link:hover {
+    color: #757373; }
+
+.iphonex {
+  background-image: url(http://images.eurogamer.net/2017/articles/2017-11-25-12-29/digitalfoundry-2017-apple-iphone-x-review-1511612951475.jpg/EG11/resize/960x-1/quality/90/format/jpg);
+  background-color: #F1F1F1;
+  padding-bottom: 0;
+  margin-bottom: 0px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 60%;
+  height: 70%; }
+  .iphonex h1 {
+    font-weight: bold;
+    font-size: 350%; }
+  .iphonex h3 {
+    font-size: 160%; }
+
+.iphone8 {
+  background-image: url(https://cdn.wccftech.com/wp-content/uploads/2017/09/iPhone-8-iPhone-8-Plus.png);
+  background-color: #F1F1F1;
+  margin-bottom: 10;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 60%;
+  height: 70%; }
+  .iphone8 h1 {
+    font-weight: bold;
+    font-size: 350%; }
+  .iphone8 h3 {
+    font-size: 160%; }
+
+.card {
+  text-align: center; }
+  .card h4 {
+    color: #000000;
+    font-size: 2rem;
+    font-weight: bold; }
+    .card h4 p {
+      color: #ff0000;
+      font-size: 50%; }
+  .card .lal {
+    color: white; }
+
+.card-group {
+  margin-left: 0; }
+  .card-group img {
+    width: 100%;
+    height: auto;
+    min-height: 10%;
+    display: block; }
+
+.fuck {
+  padding: 0; }
+  .fuck .tvone {
+    height: 100%;
+    opacity: 0.8; }
+  .fuck .pt {
+    color: #F1F1F1; }
+
+.redcross {
+  text-align: center; }
+
+.tables {
+  justify-content: center; }
+  .tables .table {
+    align-items: center; }
+    .tables .table td, .tables .table th {
+      font-size: 0.7em;
+      padding: 4px; }
+
+/*# sourceMappingURL=output.css.map */
