@@ -2,125 +2,144 @@
 @mixin background {
 	background-position:bottom;
 	background-repeat:no-repeat;
-	background-size:70vh;
-	height: 60vh;
+	background-size:70vw;
+	height: 65vh;
 	min-height:200px;
+
+	@media only screen and (max-width: 768px) {
+		height: 40vh
+	}
 }
 
 
 // placeholders
-%text {
-	color:black;
-	text-align:center;
-}
+	%text {
+		color:black;
+		text-align:center;
+	}
 // variables
-$white: #F1F1F1;
-$black: #000000;
-$red: #ff0000;
-$grey: #757373;
+	$white: #F1F1F1;
+	$black: #000000;
+	$red: #ff0000;
+	$grey: #757373;
 
 // css
-body {
-	background-color:$white;
-	line-height:1.428;
-}
-.navbar {
-	background-color:$black;
-	opacity:0.8;
-	.container {
-		text-align: center;
+	body {
+		background-color:$white;
+		line-height:1.428;
+		overflow-x: hidden;
 	}
-}
-.nav-link {
-	font-size:0.9em;
-	color:white;
-	padding:0;
-	&:hover {
-		color:$grey;
-	}
-}
-
-.iphonex {
-	h1 {
-		@extend %text;
-		font-weight: bold;
-		font-size:350%;
-	}
-	h2 {
-		@extend %text;
-		font-size: 160%;
-	}
-	background-image:url(http://images.eurogamer.net/2017/articles/2017-11-25-12-29/digitalfoundry-2017-apple-iphone-x-review-1511612951475.jpg/EG11/resize/960x-1/quality/90/format/jpg);
-	background-color:$white;
-	padding-bottom:0;
-	margin-bottom:0px;
-	@include background;
-}
-.iphone8 {
-	h1 {
-		@extend %text;
-		font-weight: bold;
-		font-size:350%;
-	}
-	h2 {
-		@extend %text;
-		font-size: 160%;
-	}
-	background-image:url(https://cdn.wccftech.com/wp-content/uploads/2017/09/iPhone-8-iPhone-8-Plus.png);
-	background-color:$white;
-	@include background;
-	background-color:#F9F0EA;
-}
-
-.card-group {
-	margin-left:0;
-	.card {
-	text-align:center;
-	padding:0;
-	.tvone {
-		height:100%;
-		opacity: 0.8;
-	}
-	.pt {
-		color: $white;
-	}
-	h4 {
-		color:$black;
-		font-size: 2em;
-		font-weight: bold;		
-		text-shadow: 1px 1px $white;		
-	p {
-		color:$red;
-		font-size: 0.5em;
-		text-shadow: 1px 1px $white;
-		}		
-	}
-	.lal {
-		color:white;
-	}
-}
-	img {
-		width:100%;
-		height:auto;
-		min-height: 10%;
-		display: block;
-	}
-	.imac {
-		background-color: #1A1A1A;
-		h4, p {
-			color:$white;
+	//NAVIGATION MENU
+	.navbar {
+		background-color:$black;
+		opacity:0.8;
+		.container {
+			text-align: center;
+		}
+		.nav-link {
+			font-size:0.9em;
+			color:white;
+			padding:0;
+			&:hover {
+				color:$grey;
+			}
 		}
 	}
-}
-.redcross {
-text-align:center;
-}
-
-.tables {
-.table {
-	td, th {
-		font-size: 0.7em;
-		padding:4px;
+	//JUMBOTRONS  IPHONE X  AND  IPHONE 8
+	.iphonex {
+		h1 {
+			@extend %text;
+			font-weight: bold;
+			font-size:350%;
+		}
+		h2 {
+			@extend %text;
+			font-size: 160%;
+		}
+		background-image:url(http://images.eurogamer.net/2017/articles/2017-11-25-12-29/digitalfoundry-2017-apple-iphone-x-review-1511612951475.jpg/EG11/resize/960x-1/quality/90/format/jpg);
+		background-color:$white;
+		padding-bottom:0;
+		margin-bottom:0px;
+		@include background;
 	}
-}
-}
+	.iphone8 {
+		h1 {
+			@extend %text;
+			font-weight: bold;
+			font-size:350%;
+		}
+		h2 {
+			@extend %text;
+			font-size: 160%;
+		}
+		background-image:url(https://cdn.wccftech.com/wp-content/uploads/2017/09/iPhone-8-iPhone-8-Plus.png);
+		background-color:$white;
+		@include background;
+		background-color:#F9F0EA;
+	}
+	//CARDS
+	.card-group {
+		margin-left:0;
+		.card {
+			text-align:center;
+			padding:0;
+		}
+		img {
+			width:100%;
+			height:auto;
+			min-height: 10%;
+			display: block;
+		}
+		#watch {
+			text-shadow:1px 1px $white;
+			h4 {
+				color:$black;
+				text-shadow:1px 1px $white;
+				font-size: 2em;
+				font-weight: bold;
+			}
+			img {
+				opacity: 0.8;
+			}
+		}
+		#tv {
+			img {
+				height:100%;
+				opacity: 0.8;
+			}
+		}
+		#series {
+			color:$red;
+			font-size: 120%;
+		}
+		#tv {
+			h4, p {
+				color:$white;
+			}
+		}
+		#ipad {
+			text-shadow:1px 1px $white;
+		}
+		#imac {
+			background-color: #1A1A1A;
+			h4, p {
+				color:$white;
+			}
+		}
+		#shop {
+			text-shadow:1px 1px $white;
+		}
+	}
+		
+	.redcross {
+		text-align:center;
+	}
+	//TABLE
+	.tables {
+		.table {
+			td, th {
+				font-size: 0.7em;
+				padding:4px;
+			}
+		}
+	}

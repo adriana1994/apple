@@ -4,20 +4,20 @@
 
 body {
   background-color: #F1F1F1;
-  line-height: 1.428; }
+  line-height: 1.428;
+  overflow-x: hidden; }
 
 .navbar {
   background-color: #000000;
   opacity: 0.8; }
   .navbar .container {
     text-align: center; }
-
-.nav-link {
-  font-size: 0.9em;
-  color: white;
-  padding: 0; }
-  .nav-link:hover {
-    color: #757373; }
+  .navbar .nav-link {
+    font-size: 0.9em;
+    color: white;
+    padding: 0; }
+    .navbar .nav-link:hover {
+      color: #757373; }
 
 .iphonex {
   background-image: url(http://images.eurogamer.net/2017/articles/2017-11-25-12-29/digitalfoundry-2017-apple-iphone-x-review-1511612951475.jpg/EG11/resize/960x-1/quality/90/format/jpg);
@@ -26,22 +26,25 @@ body {
   margin-bottom: 0px;
   background-position: bottom;
   background-repeat: no-repeat;
-  background-size: 70vh;
-  height: 60vh;
+  background-size: 70vw;
+  height: 65vh;
   min-height: 200px; }
   .iphonex h1 {
     font-weight: bold;
     font-size: 350%; }
   .iphonex h2 {
     font-size: 160%; }
+  @media only screen and (max-width: 768px) {
+    .iphonex {
+      height: 40vh; } }
 
 .iphone8 {
   background-image: url(https://cdn.wccftech.com/wp-content/uploads/2017/09/iPhone-8-iPhone-8-Plus.png);
   background-color: #F1F1F1;
   background-position: bottom;
   background-repeat: no-repeat;
-  background-size: 70vh;
-  height: 60vh;
+  background-size: 70vw;
+  height: 65vh;
   min-height: 200px;
   background-color: #F9F0EA; }
   .iphone8 h1 {
@@ -49,37 +52,45 @@ body {
     font-size: 350%; }
   .iphone8 h2 {
     font-size: 160%; }
+  @media only screen and (max-width: 768px) {
+    .iphone8 {
+      height: 40vh; } }
 
 .card-group {
   margin-left: 0; }
   .card-group .card {
     text-align: center;
     padding: 0; }
-    .card-group .card .tvone {
-      height: 100%;
-      opacity: 0.8; }
-    .card-group .card .pt {
-      color: #F1F1F1; }
-    .card-group .card h4 {
-      color: #000000;
-      font-size: 2em;
-      font-weight: bold;
-      text-shadow: 1px 1px #F1F1F1; }
-      .card-group .card h4 p {
-        color: #ff0000;
-        font-size: 0.5em;
-        text-shadow: 1px 1px #F1F1F1; }
-    .card-group .card .lal {
-      color: white; }
   .card-group img {
     width: 100%;
     height: auto;
     min-height: 10%;
     display: block; }
-  .card-group .imac {
+  .card-group #watch {
+    text-shadow: 1px 1px #F1F1F1; }
+    .card-group #watch h4 {
+      color: #000000;
+      text-shadow: 1px 1px #F1F1F1;
+      font-size: 2em;
+      font-weight: bold; }
+    .card-group #watch img {
+      opacity: 0.8; }
+  .card-group #tv img {
+    height: 100%;
+    opacity: 0.8; }
+  .card-group #series {
+    color: #ff0000;
+    font-size: 120%; }
+  .card-group #tv h4, .card-group #tv p {
+    color: #F1F1F1; }
+  .card-group #ipad {
+    text-shadow: 1px 1px #F1F1F1; }
+  .card-group #imac {
     background-color: #1A1A1A; }
-    .card-group .imac h4, .card-group .imac p {
+    .card-group #imac h4, .card-group #imac p {
       color: #F1F1F1; }
+  .card-group #shop {
+    text-shadow: 1px 1px #F1F1F1; }
 
 .redcross {
   text-align: center; }
