@@ -1,9 +1,10 @@
-.iphonex h1, .iphonex h3, .iphone8 h1, .iphone8 h3 {
+.iphonex h1, .iphonex h2, .iphone8 h1, .iphone8 h2 {
   color: black;
   text-align: center; }
 
 body {
-  background-color: #F1F1F1; }
+  background-color: #F1F1F1;
+  line-height: 1.428; }
 
 .navbar {
   background-color: #000000;
@@ -25,68 +26,66 @@ body {
   margin-bottom: 0px;
   background-position: bottom;
   background-repeat: no-repeat;
-  background-size: 90vh;
-  height: 30rem;
-  min-height: 40rem; }
+  background-size: 70vh;
+  height: 60vh;
+  min-height: 200px; }
   .iphonex h1 {
     font-weight: bold;
     font-size: 350%; }
-  .iphonex h3 {
+  .iphonex h2 {
     font-size: 160%; }
 
 .iphone8 {
   background-image: url(https://cdn.wccftech.com/wp-content/uploads/2017/09/iPhone-8-iPhone-8-Plus.png);
   background-color: #F1F1F1;
-  margin-bottom: 10;
   background-position: bottom;
   background-repeat: no-repeat;
-  background-size: 90vh;
-  height: 30rem;
-  min-height: 40rem;
+  background-size: 70vh;
+  height: 60vh;
+  min-height: 200px;
   background-color: #F9F0EA; }
   .iphone8 h1 {
     font-weight: bold;
     font-size: 350%; }
-  .iphone8 h3 {
+  .iphone8 h2 {
     font-size: 160%; }
-
-.card {
-  text-align: center; }
-  .card h4 {
-    color: #000000;
-    font-size: 2em;
-    font-weight: bold; }
-    .card h4 p {
-      color: #ff0000;
-      font-size: 0.5em; }
-  .card .lal {
-    color: white; }
 
 .card-group {
   margin-left: 0; }
+  .card-group .card {
+    text-align: center;
+    padding: 0; }
+    .card-group .card .tvone {
+      height: 100%;
+      opacity: 0.8; }
+    .card-group .card .pt {
+      color: #F1F1F1; }
+    .card-group .card h4 {
+      color: #000000;
+      font-size: 2em;
+      font-weight: bold;
+      text-shadow: 1px 1px #F1F1F1; }
+      .card-group .card h4 p {
+        color: #ff0000;
+        font-size: 0.5em;
+        text-shadow: 1px 1px #F1F1F1; }
+    .card-group .card .lal {
+      color: white; }
   .card-group img {
     width: 100%;
     height: auto;
     min-height: 10%;
     display: block; }
-
-.fuck {
-  padding: 0; }
-  .fuck .tvone {
-    height: 100%;
-    opacity: 0.8; }
-  .fuck .pt {
-    color: #F1F1F1; }
+  .card-group .imac {
+    background-color: #1A1A1A; }
+    .card-group .imac h4, .card-group .imac p {
+      color: #F1F1F1; }
 
 .redcross {
   text-align: center; }
 
-.tables {
-  justify-content: center; }
-  .tables .table {
-    align-items: center; }
-    .tables .table td, .tables .table th {
-      font-size: 0.7em;
-      padding: 4px; }
+.tables .table td, .tables .table th {
+  font-size: 0.7em;
+  padding: 4px; }
 
 /*# sourceMappingURL=output.css.map */

@@ -2,9 +2,9 @@
 @mixin background {
 	background-position:bottom;
 	background-repeat:no-repeat;
-	background-size:90vh;
-	height: 30rem;
-	min-height:40rem;
+	background-size:70vh;
+	height: 60vh;
+	min-height:200px;
 }
 
 
@@ -22,6 +22,7 @@ $grey: #757373;
 // css
 body {
 	background-color:$white;
+	line-height:1.428;
 }
 .navbar {
 	background-color:$black;
@@ -45,7 +46,7 @@ body {
 		font-weight: bold;
 		font-size:350%;
 	}
-	h3 {
+	h2 {
 		@extend %text;
 		font-size: 160%;
 	}
@@ -61,42 +62,21 @@ body {
 		font-weight: bold;
 		font-size:350%;
 	}
-	h3 {
+	h2 {
 		@extend %text;
 		font-size: 160%;
 	}
 	background-image:url(https://cdn.wccftech.com/wp-content/uploads/2017/09/iPhone-8-iPhone-8-Plus.png);
 	background-color:$white;
-	margin-bottom:10;
 	@include background;
 	background-color:#F9F0EA;
 }
-.card {
-	text-align:center;
-	h4 {
-		color:$black;
-		font-size: 2em;
-		font-weight: bold;
-		p {
-			color:$red;
-			font-size: 0.5em;
-		}
-	}
-	.lal {
-		color:white;
-	}
-}
+
 .card-group {
 	margin-left:0;
-	img {
-		width:100%;
-		height:auto;
-		min-height: 10%;
-		display: block;
-	}
-}
-.fuck {
-		padding:0;
+	.card {
+	text-align:center;
+	padding:0;
 	.tvone {
 		height:100%;
 		opacity: 0.8;
@@ -104,15 +84,40 @@ body {
 	.pt {
 		color: $white;
 	}
+	h4 {
+		color:$black;
+		font-size: 2em;
+		font-weight: bold;		
+		text-shadow: 1px 1px $white;		
+	p {
+		color:$red;
+		font-size: 0.5em;
+		text-shadow: 1px 1px $white;
+		}		
+	}
+	.lal {
+		color:white;
+	}
+}
+	img {
+		width:100%;
+		height:auto;
+		min-height: 10%;
+		display: block;
+	}
+	.imac {
+		background-color: #1A1A1A;
+		h4, p {
+			color:$white;
+		}
+	}
 }
 .redcross {
 text-align:center;
 }
 
 .tables {
-	justify-content:center;
 .table {
-	align-items:center;
 	td, th {
 		font-size: 0.7em;
 		padding:4px;
